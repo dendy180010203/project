@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 14px;
+    min-height: 100vh;
+}
+
+h1{
+    text-align: center;
+}
+
+form,section {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+form textarea{
+    resize: none;
+    width: 100%;
+    min-height: 60px;
+    padding: 14px;
+}
+
+form button{
+    padding: 8px;
+    cursor: pointer;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+form button:hover {
+    opacity: 0.8;
+}
+
+.todoContainer,.todo{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.todo{
+    padding: 14px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+}
+
+.btnContainer{
+    display: flex;
+    gap: 6px;
+}
+
+.iconBtn {
+    background: rgb(242, 240, 240);
+    border: none;
+    cursor: pointer;
+    padding: 0 8px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.iconBtn:hover {
+    background: lightgrey;
+}
